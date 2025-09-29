@@ -8,10 +8,10 @@ import sqlite3
 stock_codes = ["005930", "000660", "373220", "207940", "012450"]
 stock_names = ["삼성전자", "SK하이닉스", "LG에너지솔루션", "삼성바이오로직스", "한화에어로스페이스"]
 
-# 이 주소에서 데이터를 가져올거야~
 for i in range(5):
     stock_code = stock_codes[i]
     stock_name = stock_names[i]
+    # 이 주소에서 데이터를 가져올거야~
     url = f"https://finance.naver.com/item/sise.naver?code={stock_code}"
     # 알려준 주소에서 코드 좀 다 읽어와봐!
     response = request.urlopen(url)
