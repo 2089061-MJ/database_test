@@ -20,7 +20,7 @@ for i in range(5):
     # 가져온 코드의 구조를 분석해서 보유하자!
     soup = BeautifulSoup(html, "html.parser")
 
-    # 분석 결과 내에 내가 원하는 정보가 있다면 가져오자!]
+    # 분석 결과 내에 내가 원하는 정보가 있다면 가져오자!
     info = soup.select_one("#_nowVal")
     price = info.text
 
